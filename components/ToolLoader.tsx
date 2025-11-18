@@ -43,7 +43,7 @@ export default function ToolLoader({ toolName }: { toolName: string }) {
     const colors = tool.colors;
 
     return (
-        <div className="tool-card rounded-xl p-6 shadow-xl space-y-4">
+        <div className="tool-card space-y-4">
             <h2 className={`text-2xl font-bold ${colors.tool.text} mb-4 flex items-center`}>
                 <IconComponent className={`w-6 h-6 ${colors.tool.icon} mr-2 flex-shrink-0`} />
                 {tool.title}
