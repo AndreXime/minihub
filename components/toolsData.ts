@@ -1,10 +1,13 @@
-import { Fuel, Lock, LucideIcon } from 'lucide-react';
+import { DollarSign, Fuel, Lock, LucideIcon } from 'lucide-react';
 
 export const toolCategories: ToolCategory[] = [
     {
         id: 'math-finance',
         name: 'Matemática e Finanças',
-        tools: [{ title: 'Gerador de Orçamento de Combustível', icon: Fuel }],
+        tools: [
+            { title: 'Gerador de Orçamento de Combustível', icon: Fuel },
+            { title: 'Calculadora de renda passiva', icon: DollarSign },
+        ],
     },
     {
         id: 'productivity',

@@ -14,6 +14,9 @@ export default function ToolLoader({ toolName }: { toolName: string }) {
         case 'Gerador de Orçamento de Combustível':
             importPath = './tools/FuelCost';
             break;
+        case 'Calculadora de renda passiva':
+            importPath = './tools/Investiment';
+            break;
         default:
             importPath = undefined;
     }
