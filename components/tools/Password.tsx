@@ -1,7 +1,6 @@
 import React, { useState, useMemo, useCallback } from 'react';
 import { ToolColorSchema } from '../toolsData';
 
-// Constantes para os conjuntos de caracteres
 const CHARS = {
     LOWER: 'abcdefghijklmnopqrstuvwxyz',
     UPPER: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
@@ -9,12 +8,6 @@ const CHARS = {
     SYMBOLS: '!@#$%^&*()_+~`|}{[]:;?><,./-=',
 };
 
-/**
- * Função para gerar a senha com base nas configurações.
- * @param length Comprimento da senha.
- * @param options Configurações dos tipos de caracteres.
- * @returns Senha gerada.
- */
 function generatePassword(
     length: number,
     options: {
@@ -126,9 +119,7 @@ function PasswordCard({ colors }: { colors: ToolColorSchema }) {
     const inputClasses = `rounded ${primaryClasses.ring.replace('focus:ring-', 'text-').replace('500', '600')} mr-2`;
 
     return (
-        <div className="space-y-6 p-4 bg-white rounded-xl shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-800">Gerador de Senhas</h2>
-
+        <div className="space-y-6">
             {/* --- Seção de Comprimento --- */}
             <div className="pt-2">
                 <label htmlFor="password-length" className="block text-gray-700 font-medium mb-2">
