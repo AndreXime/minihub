@@ -1,4 +1,4 @@
-import { DollarSign, Fuel, Lock, LucideIcon } from 'lucide-react';
+import { DollarSign, Fuel, Lock, LucideIcon, Percent } from 'lucide-react';
 
 export const toolCategories: ToolCategory[] = [
     {
@@ -12,7 +12,7 @@ export const toolCategories: ToolCategory[] = [
     {
         id: 'productivity',
         name: 'Produtividade',
-        tools: [],
+        tools: [{ title: 'Calculos de porcentagem', icon: Percent }],
     },
     {
         id: 'web-dev-utils',

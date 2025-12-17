@@ -17,6 +17,9 @@ export default function ToolLoader({ toolName }: { toolName: string }) {
         case 'Calculadora de renda passiva':
             importPath = './tools/Investiment';
             break;
+        case 'Calculos de porcentagem':
+            importPath = "./tools/PercentageCalculator"
+            break;
         default:
             importPath = undefined;
     }
